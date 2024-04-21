@@ -1,0 +1,221 @@
+
+@font-face {
+    font-style: regular;
+  font-weight: 400;
+  font-display: swap;
+  font-family: "Montserrat";
+  src: local("Montserrat-Regular");
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  src: url("../fonts/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/Montserrat-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+  font-family: "Montserrat";
+  src: local("Montserrat-Medium");
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  src: url("../fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/Montserrat-Medium.ttf") format("ttf");
+}
+
+@font-face {
+    font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  font-family: "Montserrat";
+  src: local("Montserrat-Bold");
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  src: url("../fonts/Montserrat-Bold.woff") format("woff");
+  src: url("../fonts/Montserrat-Bold.ttf") format("ttf");
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fed84c;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #fed84c;
+    border: 0.1rem solid #fed84c;
+}
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+
+body {
+    font: 400 11px/1.5 Montserrat, Thin;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.25;
+}
+
+button {
+    font: 500 1.2em/1.5 Montserrat;
+    padding: 2.8rem 4.5rem;
+    color: #fff;
+    background: #fed84c;
+    color: #2e363e;
+    border-radius: 0.8rem;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 2rem;
+    margin: 0 auto;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    max-width: 107.27rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header-info {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-column-gap: 1.5em;
+    -moz-column-gap: 1.5em;
+    column-gap: 1.5em;
+}
+
+.header {
+    border-bottom: 1px solid rgba(126, 134, 142, 0.1);
+    font-size: 1.1rem;
+}
+
+.header__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-height: 11rem;
+}
+
+.header__bg {
+    z-index: -100;
+    position: absolute;
+}
+
+.header__icon {
+    width: 1.7em;
+    height: 1.7em;
+    margin-top: 0.5em;
+}
+
+.header__phone-txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.header__phone-number {
+    font-weight: 700;
+    font-size: 1.67em;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.header__adress-txt {
+    max-width: 10.2em;
+}
+
+.header__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 7.8em;
+}
+
+.header__logo {
+    font-weight: 500;
+    font-size: 1.75em;
+    line-height: 1.43;
+    color: #fff;
+}
+
+.promo {
+    font-size: 1.36rem;
+}
+
+.promo__container {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.promo__block {
+    padding-top: 12.5em;
+    max-width: 42em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 2.6em;
+}
+
+.promo__txt {
+    font-size: 1.6em;
+    line-height: 1.43;
+    color: #fff;
+    opacity: 0.9;
+    max-width: 19em;
+}
+
+.promo__catalog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.33em;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.promo__catalog-txt {
+    line-height: 1.6;
+    max-width: 10em;
+}
+
+.promo__decor-button {
+    line-height: 1.5;
+    padding: 1em;
+    background: #F2F6FA;
+    font-size: 0.73em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2e363e;
+    display: inline;
+    border-radius: 0.35em;
+}
